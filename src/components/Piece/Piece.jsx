@@ -1,4 +1,4 @@
-import '../styles/Piece.css'
+import './Piece.css'
 
 import {
   BispoPreto,
