@@ -11,10 +11,3 @@
   position: absolute
 }
 
-#board .white-square {
-  background-color: white;
-}
-
-#board .black-square {
-  background-color: black;
-}

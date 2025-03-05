@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './Piece.css'
 
 import {
@@ -13,7 +14,7 @@ import {
   ReiBranco,
   TorrePreta,
   TorreBranca
-} from '../public/imageIndex'
+} from '../../public/imageIndex'
 
 const piecesKey = {
   "ReiBranco": ReiBranco,
@@ -30,8 +31,10 @@ const piecesKey = {
   "PeaoPreto": PeaoPreto
 }
 
-export function Piece(pieceKey) {
+export function Piece(props) {
+  const piece = props.piece
   return (
-    piecesKey[pieceKey]
+      <img className='piece' src={piecesKey[piece]}/>
+
   )
 }
